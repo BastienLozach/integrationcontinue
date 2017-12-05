@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				sh 'mvn -B -DskipTests clean package'
 				sh 'mvn test'
-				sh 'ls'
+				sh 'ls target'
 			}
 		}
 	}
